@@ -13,7 +13,7 @@ proxy = "rp.proxyscrape.com:6060"
 
 def devode(im):
     from base64 import b64decode
-    print(im)
+   # print(im)
     rt= b64decode(im)
     return rt
 
@@ -64,7 +64,7 @@ def run(playwright: Playwright) -> None:
     for number in numbers:
         
         pro=random.choice(proxyes)
-        print(f"{pro}:{random.randint(10000,10248)}")
+        #print(f"{pro}:{random.randint(10000,10248)}")
         ignonumber=open('ignonum.txt','r')
         ignonumber2=ignonumber.readlines()
       #  print(ignonumber2)
@@ -109,6 +109,11 @@ def run(playwright: Playwright) -> None:
             page.get_by_role("button", name="Go!").click()
             '''
             #sleep(400000)
+            import os
+            os.system('cls')
+            print(f"Proxy: {pro}")
+            print(f"Phon Number: {number2}")
+            print(f"Cantry {cun}")
             page.goto("https://www.astrosage.com/",wait_until='domcontentloaded',timeout=4000)
             #sleep(2222)
             selector = "#appNavbar > div.collapse.navbar-collapse > ul > li > button > a.ln"
