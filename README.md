@@ -20,6 +20,3 @@ python astro sag.py
 
 [Telegram](https://t.me/MarBous)
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
